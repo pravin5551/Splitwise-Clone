@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splitwise_Clone">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".menubartrail.MenuMainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Splitwise_Clone.NoActionBar" />
+        <activity android:name=".menubartrail.pravinmainactivity.MainActivity" />
+        <activity android:name=".pravinTrialAndError.FragmentMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
