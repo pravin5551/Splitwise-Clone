@@ -7,6 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="mint_leaf">#00b894</color>
+    <color name="pumpkin">#d35400</color>
+    <color name="harley_davidson_orrange">#c23616</color>
+
     <color name="green_1">#373b3f</color>
     <color name="green_2">#1cc29f</color>
     <color name="grey">#EEEEEE</color>

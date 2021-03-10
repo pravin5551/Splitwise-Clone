@@ -9,10 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splitwise_Clone">
+
+
+
+        <activity
+            android:name=".menubartrail.MenuMainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.Splitwise_Clone.NoActionBar" />
+        <activity android:name=".menubartrail.pravinmainactivity.MainActivity" />
+        <activity android:name=".sanjoy.AddExpenseActivity"/>
+        <activity android:name=".sanjoy.HomeActivity"></activity>
+        <activity android:name=".sanjoy.SettingActivity" />
+
+        <activity android:name=".pravinTrialAndError.FragmentMainActivity">
+
+
         <activity android:name=".harsh.Sign_up_Screen_Activity"></activity>
         <activity android:name=".harsh.Login_Screen_Activity" />
         <activity android:name=".harsh.SplitWiseScreen" />
         <activity android:name=".harsh.FirstScreen" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

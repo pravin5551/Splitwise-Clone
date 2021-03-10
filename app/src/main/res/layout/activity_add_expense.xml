@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sanjoy.AddExpenseActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mint_leaf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvBackArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:drawableStart="@drawable/back_arrow"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/dp_20"
+            android:text="@string/add_expense"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvBackArrow"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_18"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvWithYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:text="@string/with_you_and"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/etNameEmailPhone"
+        app:layout_constraintEnd_toStartOf="@id/etNameEmailPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/etNameEmailPhone" />
+
+    <EditText
+        android:id="@+id/etNameEmailPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_name_email_phone"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintStart_toEndOf="@id/tvWithYou"
+        app:layout_constraintTop_toBottomOf="@id/clLayout" />
+
+    <TextView
+        android:id="@+id/tvLineTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="#e4e4e4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNameEmailPhone" />
+
+    <LinearLayout
+        android:id="@+id/llLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLineTop">
+
+        <ImageView
+            android:id="@+id/ivCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_18"
+            android:src="@drawable/category" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:hint="@string/enter_description" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llLayout1">
+
+        <ImageView
+            android:id="@+id/ivCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_18"
+            android:src="@drawable/category" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:hint="0.0"
+            android:textSize="@dimen/sp_20" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPaidBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:text="@string/paid_by"
+        app:layout_constraintEnd_toStartOf="@id/cvYou"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llLayout2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:elevation="@dimen/dp_15"
+        app:layout_constraintEnd_toStartOf="@id/tvAndSplit"
+        app:layout_constraintStart_toEndOf="@id/tvPaidBy"
+        app:layout_constraintTop_toBottomOf="@id/llLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20"
+            android:text="@string/you"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvAndSplit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:text="@string/and_split"
+        app:layout_constraintEnd_toStartOf="@id/cvEqually"
+        app:layout_constraintStart_toEndOf="@id/cvYou"
+        app:layout_constraintTop_toBottomOf="@id/llLayout2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvEqually"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:elevation="@dimen/dp_15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvAndSplit"
+        app:layout_constraintTop_toBottomOf="@id/llLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_10"
+            android:text="@string/equally"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvLineBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="#e4e4e4"
+        app:layout_constraintBottom_toTopOf="@id/llGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+    <LinearLayout
+        android:id="@+id/llCalender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/llGroup"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ivCalender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:src="@drawable/calender" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/dp_20"
+            android:text="@string/today" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivCamera"
+        app:layout_constraintStart_toEndOf="@id/llCalender">
+
+        <ImageView
+            android:id="@+id/ivGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:src="@drawable/group" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingEnd="@dimen/dp_30"
+            android:text="@string/no" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/camera"
+        app:layout_constraintBottom_toBottomOf="@id/llGroup"
+        app:layout_constraintEnd_toStartOf="@id/ivNotes"
+        app:layout_constraintStart_toEndOf="@id/llGroup"
+        app:layout_constraintTop_toTopOf="@id/llGroup" />
+
+    <ImageView
+        android:id="@+id/ivNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/notes"
+        app:layout_constraintBottom_toBottomOf="@id/ivCamera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivCamera"
+        app:layout_constraintTop_toTopOf="@id/ivCamera" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

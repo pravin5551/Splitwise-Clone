@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.exaple.splitwise_clone.menubartrail.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.exaple.splitwise_clone.menubartrail.ui.settings.SettingsFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_ScaneCode"
+        android:name="com.exaple.splitwise_clone.menubartrail.ui.scancode.ScanCodeFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_Contact"
+        android:name="com.exaple.splitwise_clone.menubartrail.ui.contcts.ContactFragment"
+        android:label="Contact us"
+        tools:layout="@layout/fragment_contact" />
+
+
+</navigation>
