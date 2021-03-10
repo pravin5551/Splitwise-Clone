@@ -91,7 +91,6 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome_to_splitwise_pravin">Welcome to Splitwise, Pravin!</string>
     <string name="splitwise_friends">Splitwise keeps track of balances between friends</string>
     <string name="introOfFrag">You can split expenses with group or individuals</string>
