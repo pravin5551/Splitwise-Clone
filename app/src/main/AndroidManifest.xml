@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splitwise_Clone">
-        <activity android:name=".MainActivity">
+        <activity android:name=".harsh.Sign_up_Screen_Activity"></activity>
+        <activity android:name=".harsh.Login_Screen_Activity" />
+        <activity android:name=".harsh.SplitWiseScreen" />
+        <activity android:name=".harsh.FirstScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

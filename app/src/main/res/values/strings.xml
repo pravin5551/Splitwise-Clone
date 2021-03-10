@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Splitwise_Clone</string>
+    <string name="login_in">LOG IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="terms">Terms</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="contact_us">Contact us</string>
+    <string name="your_email_address">Your email address</string>
+    <string name="your_password">Your password address</string>
+    <string name="back">BACK</string>
+    <string name="done">DONE</string>
+    <string name="forgot_password">Forgot your password </string>
+    <string name="full_name">Full name </string>
+    <string name="by_signing_up">By signing up, you accept the Splitwise Terms of Service</string>
 </resources>
