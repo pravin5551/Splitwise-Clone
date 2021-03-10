@@ -19,4 +19,7 @@
       </GradleProjectSettings>
     </option>
   </component>
+
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+
 </project>

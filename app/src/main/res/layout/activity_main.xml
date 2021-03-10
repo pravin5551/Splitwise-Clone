@@ -7,7 +7,6 @@
     android:gravity="top"
     android:orientation="vertical"
     tools:context=".vinod.views.MainActivity">
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvContactAddTemp"
         android:layout_width="match_parent"
