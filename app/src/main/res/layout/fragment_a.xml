@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3FB593"
+    android:gravity="center"
+    tools:context=".pravinTrialAndError.FragmentA">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/appiconp"
+        android:layout_marginBottom="110dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:text="@string/welcome_to_splitwise_pravin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/splitwise_friends"
+        android:textSize="20sp"
+        android:layout_margin="25dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        />
+
+</LinearLayout>
