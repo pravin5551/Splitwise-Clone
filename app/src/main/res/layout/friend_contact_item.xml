@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivFriendContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_shape_contact_bg"
+            android:src="@drawable/ic_user_contact_icon" />
+
+        <TextView
+            android:id="@+id/tvFriendContactName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:paddingStart="@dimen/dp_15"
+            android:paddingEnd="@dimen/dp_10"
+            android:text="SomeOne"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/tvSettledText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|start"
+            android:paddingEnd="6dp"
+            android:text="settled up"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+</LinearLayout>

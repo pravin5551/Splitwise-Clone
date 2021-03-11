@@ -4,18 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context=".sanjoy.ActivityFragment">
+=======
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".menubartrail.ui.home.ActivityFragment">
+>>>>>>> 50455efb25668612359e5b32e6213f858409b196
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
+<<<<<<< HEAD
         android:text="@string/there_is_no_activity"
         android:textSize="@dimen/sp_20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+=======
+        android:layout_height="match_parent"
+        android:text="Hello Blank fragment" />
+>>>>>>> 50455efb25668612359e5b32e6213f858409b196
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"

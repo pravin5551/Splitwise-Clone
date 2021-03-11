@@ -18,7 +18,7 @@
             android:id="@+id/tvMenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableStart="@drawable/menu_bar"
+            android:drawableStart="@drawable/ic_baseline_menu_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/dp_18"
-            android:drawableStart="@drawable/search"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/tvDots"
             app:layout_constraintTop_toTopOf="parent" />
@@ -49,7 +49,7 @@
             android:id="@+id/tvDots"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableStart="@drawable/three_dots"
+            android:drawableStart="@drawable/ic_baseline_more_vert_24_three_dots"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -62,7 +62,7 @@
         android:orientation="vertical">
 
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabLayout"
+            android:id="@+id/HomeTablayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/mint_leaf"
@@ -72,7 +72,7 @@
             app:tabTextColor="@color/white" />
 
         <androidx.viewpager.widget.ViewPager
-            android:id="@+id/viewPager"
+            android:id="@+id/HomeviewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
