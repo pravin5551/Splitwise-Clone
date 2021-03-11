@@ -6,11 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".harsh.Sign_up_Screen_Activity">
 
-
     <ImageView
         android:id="@+id/ivLogo"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:src="@drawable/logomark_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,9 +20,97 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dp_15"
         android:hint="@string/full_name"
+        android:textColor="@color/black"
         android:inputType="textPersonName"
         android:textColorHint="@color/green_2"
         app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+
+
+    <LinearLayout
+        android:id="@+id/middleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_25"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/etFullName">
+
+        <ImageView
+            android:id="@+id/ivImageTaker"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/dp_10"
+            android:src="@drawable/ic_take_photo" />
+
+        <ImageView
+            android:id="@+id/ivCamera"
+            android:layout_width="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_camera_alt_24" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/etEmailSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivLogo">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:hint="@string/your_email_address"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/green_2" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPasswordSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEmailSignUp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:hint="@string/your_password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/green_2" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:hint="@string/phone_optional"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="@color/green_2"
+        app:layout_constraintTop_toBottomOf="@id/middleLayout" />
 
 
     <LinearLayout
@@ -33,7 +120,7 @@
         android:layout_marginTop="@dimen/dp_25"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/etFullName">
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneNumber">
 
         <LinearLayout
             android:layout_width="wrap_content"

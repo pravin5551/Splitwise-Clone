@@ -110,7 +110,6 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="scan_code">Scan Code</string>
     <string name="settings">Settings</string>
-    <string name="contact_us">Contact us</string>
 
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -150,5 +149,7 @@
     <string name="forgot_password">Forgot your password </string>
     <string name="full_name">Full name </string>
     <string name="by_signing_up">By signing up, you accept the Splitwise Terms of Service</string>
+    <string name="phone_optional">+91 Phone # (optional)</string>
+    <string name="what_would_u_like_do">What would you like to do first?</string>
 
 </resources>
