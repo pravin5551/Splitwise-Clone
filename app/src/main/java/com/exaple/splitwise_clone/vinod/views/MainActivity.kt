@@ -3,23 +3,29 @@ package com.exaple.splitwise_clone.vinod.views
 import android.Manifest
 import android.content.pm.PackageManager
 import android.database.Cursor
+import android.os.Build
 import android.os.Bundle
 import android.provider.ContactsContract
+import android.view.View
 import android.widget.*
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.exaple.splitwise_clone.R
-import com.exaple.splitwise_clone.vinod.database.users.UserEntity
+import com.exaple.splitwise_clone.vinod.database.friend_non_group.FriendTransactionEntity
+import com.exaple.splitwise_clone.vinod.database.sharedpreferences.PreferenceHelper
 import com.exaple.splitwise_clone.vinod.recyclerviews.ContactCommunicator
 import com.exaple.splitwise_clone.vinod.recyclerviews.ContactTempAddAdapter
 import com.exaple.splitwise_clone.vinod.recyclerviews.ContactTempModel
 import com.exaple.splitwise_clone.vinod.viewmodels.*
 import kotlinx.android.synthetic.main.activity_main.*
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
-class MainActivity : AppCompatActivity(),
-    ContactCommunicator {
+class MainActivity : AppCompatActivity(), ContactCommunicator {
+
     private val REQ_CODE = 1
     private lateinit var to: IntArray
     private lateinit var cursor: Cursor
@@ -33,13 +39,21 @@ class MainActivity : AppCompatActivity(),
     private lateinit var friendTransactionViewModel: FriendTransactionViewModel
     private lateinit var transactionViewModel: GroupTransactionViewModel
 
+    //preferenceHelper
+    private val preferenceHelper = PreferenceHelper(this)
+
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        preferenceHelper.writeIntToPreference(SplitwiseApplication.PREF_USER_ID, 1)
+        preferenceHelper.writeBooleanToPreference(SplitwiseApplication.PREF_IS_USER_LOGIN, true)
+
         createDatabase()
 
         btnFetchContacts.setOnClickListener {
+            lvContacts.visibility = View.VISIBLE
             ActivityCompat.requestPermissions(
                 this,
                 arrayOf(
@@ -77,13 +91,31 @@ class MainActivity : AppCompatActivity(),
         }
 
         btnAddUsers.setOnClickListener {
-            if (contactList.size != 0) {
-                val userEntity =
-                    UserEntity(
-                        contactList[0].name, contactList[0].number, "vinod",
-                        "vinod", "male", "1000", "1500", "IN"
-                    )
-                userViewModel.addUser(userEntity)
+
+        }
+
+        addAllUsers.setOnClickListener {
+            if (contactList.size != 0 &&
+                preferenceHelper.readBooleanFromPreference(SplitwiseApplication.PREF_IS_USER_LOGIN)
+            ) {
+                val dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss")
+                for (i in 0 until contactList.size) {
+                    val friendTransactionEntity =
+                        FriendTransactionEntity(
+                            preferenceHelper.readIntFromPreference(SplitwiseApplication.PREF_USER_ID)
+                            , contactList[i].name, contactList[i].number, 0,
+                            dtf.format(LocalDateTime.now()), "etc..."
+                        )
+                    friendTransactionViewModel.addFriendTransaction(friendTransactionEntity)
+                    Toast.makeText(
+                        applicationContext,
+                        "Friends Added",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+                lvContacts.visibility = View.GONE
+                contactList.clear()
+                contactAdapter.notifyDataSetChanged()
             }
         }
     }

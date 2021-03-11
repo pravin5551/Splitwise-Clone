@@ -13,7 +13,8 @@ data class UserEntity(
     @ColumnInfo(name = "gender") var gender: String,
     @ColumnInfo(name = "owes") var owes: String,
     @ColumnInfo(name = "owe") var owe: String,
-    @ColumnInfo(name = "cur") var cur: String
+    @ColumnInfo(name = "user_id") var user_id: Int
+
 ) {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")

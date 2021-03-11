@@ -8,6 +8,12 @@ import com.exaple.splitwise_clone.vinod.repositories.GroupTransactionRepository
 import com.exaple.splitwise_clone.vinod.repositories.UserRepository
 
 class SplitwiseApplication : Application() {
+
+    companion object {
+         val PREF_IS_USER_LOGIN = "PREF_LOGIN_BOOLEAN_KEY"
+         val PREF_USER_ID = "PREF_LOGIN_USER_ID"
+    }
+
     val userDAO by lazy {
         val roomDatabase = SplitwiseDatabase.getDatabase(this)
         roomDatabase.getMyUserEntries()

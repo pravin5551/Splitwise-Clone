@@ -10,7 +10,7 @@ data class FriendTransactionEntity(
     @ColumnInfo(name = "name") var name: String,
     @ColumnInfo(name = "number") var number: String,
     @ColumnInfo(name = "amount") var amount: Int,
-    @ColumnInfo(name = "cur") var cur: String,
+    @ColumnInfo(name = "time") var time: String,
     @ColumnInfo(name = "description") var description: String
 ) {
     @PrimaryKey(autoGenerate = true)
