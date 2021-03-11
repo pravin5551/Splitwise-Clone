@@ -20,16 +20,20 @@ import com.exaple.splitwise_clone.sanjoy.HomeActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 
+
 class MenuMainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelectedListener{
 
-    private lateinit var appBarConfiguration : AppBarConfiguration
+
 private lateinit var drawerLayout: DrawerLayout
+
+    private lateinit var appBarConfiguration: AppBarConfiguration
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->

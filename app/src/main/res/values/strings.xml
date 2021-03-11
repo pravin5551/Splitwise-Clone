@@ -113,7 +113,7 @@
 
 
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
     <string name="split_wise">Splitwise</string>
     <string name="total_balance">TOTAL BALANCE</string>
@@ -154,5 +154,6 @@
     <string name="groups">Groups</string>
     <string name="activity">Activity</string>
     <string name="friends">Friends</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
