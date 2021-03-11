@@ -12,14 +12,14 @@
         android:layout_height="match_parent"/>
 
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:tabGravity="center"
-        android:background="@android:color/transparent"
-        app:tabBackground="@drawable/tab_pager_selector"
-        app:tabIndicatorHeight="0dp" />
+   <com.google.android.material.tabs.TabLayout
+       android:id="@+id/tabLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       app:tabGravity="center"
+       android:background="@android:color/transparent"
+      
+       app:tabIndicatorHeight="0dp"/>
 
 </RelativeLayout>
