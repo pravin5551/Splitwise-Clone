@@ -16,10 +16,7 @@ class FriendTransactionRepository(val DAO: FriendTransactionDAO) {
     }
 
     fun getFriendTransactionsList(): LiveData<List<FriendTransactionEntity>> {
-        lateinit var x: LiveData<List<FriendTransactionEntity>>
-        CoroutineScope(Dispatchers.IO).launch {
-            x = DAO.getFriendTransactionList()
-        }
+        val x: LiveData<List<FriendTransactionEntity>> = DAO.getFriendTransactionList()
         return x
     }
 

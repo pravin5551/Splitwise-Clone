@@ -7,6 +7,7 @@
     tools:context=".vinod.views.MainActivity">
 
     <LinearLayout
+        android:id="@+id/llTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -43,6 +44,13 @@
             android:layout_height="match_parent"
             android:visibility="gone" />
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listOfUserContacts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llTop" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addAllUsers"

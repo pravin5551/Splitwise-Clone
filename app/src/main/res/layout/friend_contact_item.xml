@@ -38,4 +38,34 @@
             android:textSize="@dimen/sp_14" />
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/llExtraThreeLines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvLine1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tvLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tvLine3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+
 </LinearLayout>
