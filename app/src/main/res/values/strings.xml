@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Splitwise_Clone</string>
 
+
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -91,7 +92,6 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome_to_splitwise_pravin">Welcome to Splitwise, Pravin!</string>
     <string name="splitwise_friends">Splitwise keeps track of balances between friends</string>
     <string name="introOfFrag">You can split expenses with group or individuals</string>
@@ -110,7 +110,7 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="scan_code">Scan Code</string>
     <string name="settings">Settings</string>
-    <string name="contact_us">Contact us</string>
+
 
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -137,5 +137,19 @@
     <string name="equally">EQUALLY</string>
     <string name="today">Today</string>
     <string name="no">No</string>
+
+    <string name="login_in">LOG IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="terms">Terms</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="contact_us">Contact us</string>
+    <string name="your_email_address">Your email address</string>
+    <string name="your_password">Your password address</string>
+    <string name="back">BACK</string>
+    <string name="done">DONE</string>
+    <string name="forgot_password">Forgot your password </string>
+    <string name="full_name">Full name </string>
+    <string name="by_signing_up">By signing up, you accept the Splitwise Terms of Service</string>
+    <string name="add_friends_on_spliwise">Add Friends on Spliwise</string>
 
 </resources>
