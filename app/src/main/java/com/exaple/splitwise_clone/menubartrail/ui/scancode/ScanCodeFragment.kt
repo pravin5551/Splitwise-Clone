@@ -21,7 +21,7 @@ class ScanCodeFragment : Fragment() {
     ): View? {
         scanCodeViewModel =
             ViewModelProvider(this).get(ScanCodeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_slideshow, container, false)
+        val root = inflater.inflate(R.layout.fragment_scancode, container, false)
         val textView: TextView = root.findViewById(R.id.text_slideshow)
         scanCodeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
