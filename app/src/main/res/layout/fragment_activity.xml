@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".sanjoy.ActivityFragment">
+    tools:context=".menubartrail.ui.home.ActivityFragment">
 
     <TextView
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:text="Hello Blank fragment" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"

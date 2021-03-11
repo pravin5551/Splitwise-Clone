@@ -14,21 +14,22 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
 
-                app:title="Spliwise"
                 android:background="#3FB593"
-                app:popupTheme="@style/Theme.Splitwise_Clone.PopupOverlay" />
+                app:popupTheme="@style/Theme.Splitwise_Clone.PopupOverlay"
+                app:title="Spliwise" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="18dp"
-                android:layout_marginEnd="30dp"
                 android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:padding="18dp"
                 android:src="@drawable/ic_pro_search" />
 
 
@@ -45,7 +46,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/pumpkin"
+        app:srcCompat="@drawable/plus" />
 
-        app:srcCompat="@drawable/appiconp" />
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="@dimen/dp_20"-->
+    <!--        android:backgroundTint="@color/pumpkin"-->
+    <!--        android:src="@drawable/plus"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent" />-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
