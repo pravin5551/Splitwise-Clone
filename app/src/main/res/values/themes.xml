@@ -3,7 +3,7 @@
 
     <style name="Theme.Splitwise_Clone" parent="Theme.AppCompat.Light.NoActionBar">
 
-    <style name="Theme.Splitwise_Clone" parent="Theme.Design.Light.NoActionBar">
+<!--    <style name="Theme.Splitwise_Clone" parent="Theme.Design.Light.NoActionBar">-->
 
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
