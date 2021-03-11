@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
 import com.exaple.splitwise_clone.R
+import com.exaple.splitwise_clone.menubartrail.ui.home.ViewPagerSampleAdapter
 import com.google.android.material.tabs.TabLayout
 
 class HomeActivity : AppCompatActivity() {
@@ -15,8 +16,8 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        tabLayout = findViewById<TabLayout>(R.id.tabLayout)
-        viewPager = findViewById<ViewPager>(R.id.viewPager)
+        tabLayout = findViewById<TabLayout>(R.id.HomeTablayout)
+        viewPager = findViewById<ViewPager>(R.id.HomeviewPager)
 
         tabLayout!!.addTab(tabLayout!!.newTab().setText("FRIENDS"))
         tabLayout!!.addTab(tabLayout!!.newTab().setText("GROUPS"))

@@ -2,12 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.exaple.splitwise_clone">
 
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="true" />
-
-    <uses-permission android:name="android.permission.CAMERA" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splitwise_Clone">
-        <activity android:name=".harsh.Welcome_Screen_Activity"></activity>
+
+
         <activity
             android:name=".menubartrail.MenuMainActivity"
             android:label="@string/title_activity_main"
@@ -24,11 +19,15 @@
         <activity android:name=".sanjoy.AddExpenseActivity" />
         <activity android:name=".sanjoy.HomeActivity" />
         <activity android:name=".sanjoy.SettingActivity" />
+
         <activity android:name=".pravinTrialAndError.FragmentMainActivity" />
+
+
         <activity android:name=".harsh.Sign_up_Screen_Activity" />
         <activity android:name=".harsh.Login_Screen_Activity" />
         <activity android:name=".harsh.SplitWiseScreen" />
         <activity android:name=".harsh.FirstScreen">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,5 +35,6 @@
             </intent-filter>
         </activity>
     </application>
+
 
 </manifest>
