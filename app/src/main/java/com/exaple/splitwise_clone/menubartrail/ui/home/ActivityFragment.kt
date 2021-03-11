@@ -1,4 +1,4 @@
-package com.exaple.splitwise_clone.sanjoy
+package com.exaple.splitwise_clone.menubartrail.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
