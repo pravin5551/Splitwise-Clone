@@ -151,5 +151,8 @@
     <string name="full_name">Full name </string>
     <string name="by_signing_up">By signing up, you accept the Splitwise Terms of Service</string>
     <string name="add_friends_on_spliwise">Add Friends on Spliwise</string>
+    <string name="groups">Groups</string>
+    <string name="activity">Activity</string>
+    <string name="friends">Friends</string>
 
 </resources>
