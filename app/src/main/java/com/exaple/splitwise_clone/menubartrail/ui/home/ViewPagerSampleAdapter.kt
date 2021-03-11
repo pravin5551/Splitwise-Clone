@@ -9,7 +9,6 @@ class ViewPagerSampleAdapter(private val myContext: Context, fm: FragmentManager
     override fun getItem(position: Int): Fragment {
         when (position) {
             0 -> {
-
                 return FriendsFragment()
             }
             1 -> {

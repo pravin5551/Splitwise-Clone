@@ -6,11 +6,13 @@ import android.database.Cursor
 import android.os.Build
 import android.os.Bundle
 import android.provider.ContactsContract
+import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.exaple.splitwise_clone.R
@@ -19,6 +21,7 @@ import com.exaple.splitwise_clone.vinod.database.sharedpreferences.PreferenceHel
 import com.exaple.splitwise_clone.vinod.recyclerviews.ContactCommunicator
 import com.exaple.splitwise_clone.vinod.recyclerviews.ContactTempAddAdapter
 import com.exaple.splitwise_clone.vinod.recyclerviews.ContactTempModel
+import com.exaple.splitwise_clone.vinod.recyclerviews.contactlist.ContactListAdapter
 import com.exaple.splitwise_clone.vinod.viewmodels.*
 import kotlinx.android.synthetic.main.activity_main.*
 import java.time.LocalDateTime
@@ -30,8 +33,10 @@ class MainActivity : AppCompatActivity(), ContactCommunicator {
     private lateinit var to: IntArray
     private lateinit var cursor: Cursor
     private lateinit var contactAdapter: ContactTempAddAdapter
+    private lateinit var transactionAdapter: ContactListAdapter
 
     private var contactList = mutableListOf<ContactTempModel>()
+    private var transactionList = mutableListOf<FriendTransactionEntity>()
 
     //viewModels
     private lateinit var userViewModel: UserViewModel
@@ -116,8 +121,26 @@ class MainActivity : AppCompatActivity(), ContactCommunicator {
                 lvContacts.visibility = View.GONE
                 contactList.clear()
                 contactAdapter.notifyDataSetChanged()
+                transactionAdapter.notifyDataSetChanged()
             }
         }
+        getTransactions()
+    }
+
+    private fun getTransactions() {
+        friendTransactionViewModel.getFriendTransactionsList().observe(this, Observer {
+            transactionList.clear()
+            for (i in it) {
+                if (i.user_id == preferenceHelper.readIntFromPreference(SplitwiseApplication.PREF_USER_ID)) {
+                    transactionList.add(i)
+                }
+            }
+            transactionAdapter = ContactListAdapter(transactionList)
+            listOfUserContacts.layoutManager =
+                LinearLayoutManager(this)
+            listOfUserContacts.adapter = transactionAdapter
+        })
+
     }
 
     private fun fetchContacts() {

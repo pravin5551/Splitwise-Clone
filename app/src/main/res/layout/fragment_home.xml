@@ -6,25 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".menubartrail.ui.home.HomeFragment">
 
-    <com.google.android.material.tabs.TabLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/HomeTablayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/friends" />
+            android:background="@color/mint_leaf"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/white"
+            app:tabMode="fixed"
+            app:tabTextColor="@color/white" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/groups" />
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/HomeviewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/activity" />
-    </com.google.android.material.tabs.TabLayout>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

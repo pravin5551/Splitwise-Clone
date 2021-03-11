@@ -7,8 +7,12 @@
     tools:context=".menubartrail.MenuMainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:elevation="0dp"
+        app:elevation="0dp"
+        android:background="#3FB593"
         android:theme="@style/Theme.Splitwise_Clone.AppBarOverlay">
 
         <RelativeLayout
@@ -19,7 +23,6 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-
                 android:background="#3FB593"
                 app:popupTheme="@style/Theme.Splitwise_Clone.PopupOverlay"
                 app:title="Spliwise" />
@@ -32,9 +35,7 @@
                 android:padding="18dp"
                 android:src="@drawable/ic_pro_search" />
 
-
         </RelativeLayout>
-
 
     </com.google.android.material.appbar.AppBarLayout>
 

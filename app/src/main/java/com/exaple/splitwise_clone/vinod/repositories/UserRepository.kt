@@ -6,7 +6,6 @@ import com.exaple.splitwise_clone.vinod.database.users.UserEntity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import okhttp3.internal.wait
 
 class UserRepository(val DAO: UserDAO) {
 
@@ -17,11 +16,7 @@ class UserRepository(val DAO: UserDAO) {
     }
 
     fun getUserList(): LiveData<List<UserEntity>> {
-        lateinit var x: LiveData<List<UserEntity>>
-        CoroutineScope(Dispatchers.IO).launch {
-            x = DAO.getUserList()
-        }
-        return x
+        return DAO.getUserList()
     }
 
     fun updateUser(entity: UserEntity) {

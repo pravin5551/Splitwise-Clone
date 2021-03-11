@@ -26,7 +26,7 @@
         app:layout_constraintTop_toBottomOf="@id/ivLogo">
 
         <com.google.android.material.textfield.TextInputEditText
-
+            android:id="@+id/etLoginEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_15"
@@ -48,7 +48,7 @@
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
-
+            android:id="@+id/etLoginPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_15"

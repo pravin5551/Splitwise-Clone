@@ -9,22 +9,25 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.android.synthetic.main.activity_fragment_main.*
 
-class FragmentMainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener{
+class FragmentMainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListener {
 
     private var mViewPager: ViewPager2? = null
+companion object{
+    var name = ""
 
+}
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fragment_main)
         mViewPager = findViewById(R.id.viewPager)
-
-        setViewPager()
+        name = intent.getStringExtra("name").toString()
+        setViewPager(name)
 
     }
 
-    private fun setViewPager() {
-        val fragmentAdapter=FragmentAdapter(this)
+    private fun setViewPager(name: String?) {
+        val fragmentAdapter = FragmentAdapter(this, name!!)
 
         mViewPager?.adapter = fragmentAdapter
 
@@ -32,7 +35,8 @@ class FragmentMainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListene
         /*
         A mediator to link a TabLayout with a ViewPager2. The mediator will synchronize the ViewPager2's position
          with the selected tab when a tab is selected, and the TabLayout's scroll position when the user drags the ViewPager2.
-         */TabLayoutMediator(
+         */
+        TabLayoutMediator(
             tabLayout, mViewPager!!
         )
         { tab, position -> Log.d("pravin", "onConfigureTab called") }.attach()
