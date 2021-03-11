@@ -31,16 +31,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09-03-2021_14_20__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_09-03-2021_14_20__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/sanjoy/AddExpenseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/sanjoy/AddExpenseActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/plus.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_expense.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_expense.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_activity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_friends.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_friends.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_groups.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/sanjoy/FriendsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/sanjoy/FriendsFragment.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +63,6 @@
       <list>
         <option value="Kotlin Class" />
         <option value="valueResourceFile" />
-        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -199,45 +191,25 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="474" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1615400851759">
+    <state x="474" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1615292880697">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="474" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1615400851759" />
-    <state x="415" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615431397376">
+    <state x="474" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1615292880697" />
+    <state x="415" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615362768093">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="415" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1615431397376" />
-    <state x="263" y="118" key="AndroidCreateResourceFileDialog" timestamp="1615401493288">
+    <state x="415" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1615362768093" />
+    <state x="263" y="118" key="AndroidCreateResourceFileDialog" timestamp="1615296019340">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="263" y="118" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1615401493288" />
-    <state width="1305" height="176" key="GridCell.Tab.0.bottom" timestamp="1615436577971">
+    <state x="263" y="118" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1615296019340" />
+    <state x="501" y="141" key="chooseDestDirectoryDialog" timestamp="1615362771442">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1305" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615436577971" />
-    <state width="1305" height="176" key="GridCell.Tab.0.center" timestamp="1615436577971">
+    <state x="501" y="141" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1615362771442" />
+    <state x="417" y="76" key="git4idea.branch.GitSmartOperationDialog" timestamp="1615279820803">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1305" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1615436577971" />
-    <state width="1305" height="176" key="GridCell.Tab.0.left" timestamp="1615436577970">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1305" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1615436577970" />
-    <state width="1305" height="176" key="GridCell.Tab.0.right" timestamp="1615436577971">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1305" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1615436577971" />
-    <state x="131" y="54" key="MergeDialog" timestamp="1615389254953">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="131" y="54" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1615389254953" />
-    <state x="501" y="141" key="chooseDestDirectoryDialog" timestamp="1615431761793">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="501" y="141" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1615431761793" />
-    <state x="417" y="76" key="git4idea.branch.GitSmartOperationDialog" timestamp="1615389144348">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="417" y="76" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.728@0.0.1366.728" timestamp="1615389144348" />
+    <state x="417" y="76" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.728@0.0.1366.728" timestamp="1615279820803" />
   </component>
 </project>
