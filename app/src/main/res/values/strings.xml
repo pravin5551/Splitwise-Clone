@@ -25,5 +25,22 @@
     <string name="equally">EQUALLY</string>
     <string name="today">Today</string>
     <string name="no">No</string>
+    <string name="create_a_group">Create a group</string>
+    <string name="apartment">Apartment</string>
+    <string name="house">House</string>
+    <string name="trip">Trip</string>
+    <string name="other">Other</string>
+    <string name="group_name">Group name</string>
+    <string name="enter_a_group_name">Enter a group name</string>
+    <string name="advanced_setting">Advanced settings</string>
+    <string name="simplify_group_debts">Simplify group debts</string>
+    <string name="you_will_be_able">You will be able to add group</string>
+    <string name="members_after">members after you save this new</string>
+    <string name="group">group.</string>
+    <string name="splitwise_will_not_combine">Splitwise will not combine debts in this group,</string>
+    <string name="even_if_there_are">even if there are unnecessary extra payments.</string>
+    <string name="notes">Notes</string>
+    <string name="there_is_no_activity">There is no activity in your account yet.
+    Tryadding an expense!</string>
 
 </resources>

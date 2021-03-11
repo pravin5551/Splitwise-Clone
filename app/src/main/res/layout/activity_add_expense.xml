@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-          android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
             android:text="@string/add_expense"
             android:textColor="@color/white"
             android:textSize="@dimen/sp_18"
@@ -89,12 +89,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvLineTop">
 
-        <ImageView
-            android:id="@+id/ivCategory"
+        <Spinner
+            android:id="@+id/spCategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_18"
-            android:src="@drawable/category" />
+            />
 
         <EditText
             android:layout_width="match_parent"
@@ -113,12 +113,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/llLayout1">
 
-        <ImageView
-            android:id="@+id/ivCurrency"
+        <Spinner
+            android:id="@+id/spCurrency"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_18"
-            android:src="@drawable/category" />
+            />
 
         <EditText
             android:layout_width="match_parent"
@@ -198,8 +198,7 @@
         android:background="#e4e4e4"
         app:layout_constraintBottom_toTopOf="@id/llGroup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-         />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:id="@+id/llCalender"
@@ -218,12 +217,21 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_gravity="center"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:paddingEnd="@dimen/dp_20"
             android:text="@string/today" />
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="@dimen/dp_2"
+        android:layout_height="wrap_content"
+        android:background="#d4d4d4"
+        app:layout_constraintBottom_toBottomOf="@id/llCalender"
+        app:layout_constraintEnd_toStartOf="@id/llGroup"
+        app:layout_constraintStart_toEndOf="@id/llCalender"
+        app:layout_constraintTop_toTopOf="@id/llCalender" />
 
     <LinearLayout
         android:id="@+id/llGroup"
@@ -249,6 +257,15 @@
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="@dimen/dp_2"
+        android:layout_height="wrap_content"
+        android:background="#d4d4d4"
+        app:layout_constraintBottom_toBottomOf="@id/llGroup"
+        app:layout_constraintEnd_toStartOf="@id/ivCamera"
+        app:layout_constraintStart_toEndOf="@id/llGroup"
+        app:layout_constraintTop_toTopOf="@id/llGroup" />
+
     <ImageView
         android:id="@+id/ivCamera"
         android:layout_width="wrap_content"
@@ -258,6 +275,15 @@
         app:layout_constraintEnd_toStartOf="@id/ivNotes"
         app:layout_constraintStart_toEndOf="@id/llGroup"
         app:layout_constraintTop_toTopOf="@id/llGroup" />
+
+    <TextView
+        android:layout_width="@dimen/dp_2"
+        android:layout_height="wrap_content"
+        android:background="#d4d4d4"
+        app:layout_constraintBottom_toBottomOf="@id/ivCamera"
+        app:layout_constraintEnd_toStartOf="@id/ivNotes"
+        app:layout_constraintStart_toEndOf="@id/ivCamera"
+        app:layout_constraintTop_toTopOf="@id/ivCamera" />
 
     <ImageView
         android:id="@+id/ivNotes"
