@@ -9,6 +9,7 @@ import com.exaple.splitwise_clone.R
 import com.exaple.splitwise_clone.menubartrail.MenuMainActivity
 import com.exaple.splitwise_clone.vinod.database.sharedpreferences.PreferenceHelper
 import com.exaple.splitwise_clone.vinod.views.SplitwiseApplication
+import kotlinx.android.synthetic.main.activity_first_screen.*
 import java.util.*
 import kotlin.concurrent.timerTask
 
@@ -16,7 +17,7 @@ import kotlin.concurrent.timerTask
 class FirstScreen : AppCompatActivity() {
 
     private val preferenceHelper = PreferenceHelper(this)
-    private lateinit var screen: ImageView
+   // private lateinit var screen: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

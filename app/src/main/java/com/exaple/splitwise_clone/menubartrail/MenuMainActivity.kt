@@ -4,9 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
@@ -14,14 +12,11 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.viewpager.widget.ViewPager
 import com.exaple.splitwise_clone.R
-import com.exaple.splitwise_clone.menubartrail.ui.home.ViewPagerSampleAdapter
 import com.exaple.splitwise_clone.sanjoy.AddExpenseActivity
 import com.exaple.splitwise_clone.sanjoy.HomeActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
-import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.app_bar_main.*
 
 
@@ -51,7 +46,7 @@ class MenuMainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_settings, R.id.nav_ScaneCode, R.id.nav_Contact
+                R.id.nav_home, R.id.nav_settings, R.id.nav_ScaneCode, R.id.nav_LogOut, R.id.nav_Rateme
             ), drawerLayout
         )
 

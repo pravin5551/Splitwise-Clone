@@ -153,5 +153,7 @@
     <string name="friends">Friends</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="log_out">Log out</string>
+    <string name="phone_optional"> Phone # (optional)</string>
+    <string name="what_would_u_like_do"> What would you like to do first?</string>
 
 </resources>

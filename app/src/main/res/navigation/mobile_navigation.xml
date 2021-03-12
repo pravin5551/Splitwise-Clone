@@ -24,10 +24,14 @@
         tools:layout="@layout/fragment_scancode" />
 
     <fragment
-        android:id="@+id/nav_Contact"
+        android:id="@+id/nav_LogOut"
         android:name="com.exaple.splitwise_clone.menubartrail.ui.contcts.ContactFragment"
         android:label="Contact us"
         tools:layout="@layout/fragment_contact" />
 
-
+    <fragment
+        android:id="@+id/nav_Rateme"
+        android:name="com.exaple.splitwise_clone.harsh.RateSplitwise"
+        android:label="Rate Splitwise"
+        tools:layout="@layout/fragment_rate_splitwise" />
 </navigation>

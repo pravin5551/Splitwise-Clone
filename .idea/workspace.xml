@@ -31,42 +31,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c199f60-7fd9-4e4c-8639-3f7dcd20bffc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/harsh/RateSplitwise.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/harsh/Welcome_Screen_1_Activity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/green_rectangle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_add_a_group_trip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_add_your_apartment.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_baseline_camera_alt_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_person_green_head_circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_skip_setup_for_now.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_rate_review_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome__screen_1_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_rate_splitwise.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Splitwise_Clone.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Splitwise_Clone.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/harsh/FirstScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/harsh/FirstScreen.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/harsh/Sign_up_Screen_Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/harsh/Sign_up_Screen_Activity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/menubartrail/MenuMainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/menubartrail/MenuMainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/menubartrail/ui/contcts/ContactFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/menubartrail/ui/contcts/ContactFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/menubartrail/ui/home/FriendsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/menubartrail/ui/home/FriendsFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/menubartrail/ui/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/menubartrail/ui/home/HomeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/sanjoy/AddExpenseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/sanjoy/AddExpenseActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/vinod/database/friend_non_group/FriendTransactionDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/vinod/database/friend_non_group/FriendTransactionDAO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/vinod/database/users/UserDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/vinod/database/users/UserDAO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/vinod/repositories/FriendTransactionRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/vinod/repositories/FriendTransactionRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/vinod/repositories/UserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/vinod/repositories/UserRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/circle_shape_contact_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle_shape_contact_bg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/three_dots.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/three_dots.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_expense.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_expense.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login__screen_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login__screen_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splitwise_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splitwise_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_friends.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_friends.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/menubartrail/ui/scancode/ScanCodeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/menubartrail/ui/scancode/ScanCodeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_first_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_first_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up__screen_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up__screen_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_scancode.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_scancode.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3_XL_API_27]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[ZY322BLNZD]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -146,26 +149,34 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android-custom-viewC:/Users/Vinod/.gradle/caches/modules-2/files-2.1/androidx.viewpager/viewpager/1.0.0/db045f92188b9d247d5f556866f8861ab68528f0/viewpager-1.0.0-sources.jar!/androidx/viewpager/widget/ViewPager.java_SELECTED" value="ViewPager" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/vinod/recyclerviews" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
     <property name="multi-representation-previewC:/Users/Vinod/.gradle/caches/modules-2/files-2.1/androidx.viewpager/viewpager/1.0.0/db045f92188b9d247d5f556866f8861ab68528f0/viewpager-1.0.0-sources.jar!/androidx/viewpager/widget/ViewPager.java_selected" value="Custom views" />
     <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
   </component>
   <component name="RecentsManager">
-    <key name="android.template.-649395479">
-      <recent name="com.exaple.splitwise_clone.sanjoy" />
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.exaple.splitwise_clone.harsh" />
+      <recent name="com.exaple.splitwise_clone.menubartrail.ui.home" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Harsh\Splitwise_final\Splitwise-Clone\app\src\main\java\com\exaple\splitwise_clone\menubartrail\ui\rateMe" />
     </key>
     <key name="android.template.1043182071">
       <recent name="com.exaple.splitwise_clone.sanjoy" />
     </key>
-    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="com.exaple.splitwise_clone.menubartrail.ui.home" />
-    </key>
     <key name="android.template.-211678659">
       <recent name="com.exaple.splitwise_clone.sanjoy" />
     </key>
+    <key name="android.template.-486070885">
+      <recent name="com.exaple.splitwise_clone.harsh" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Harsh\Splitwise_final\Splitwise-Clone\app\src\main\res\drawable-v24" />
       <recent name="C:\Users\Vinod\Desktop\android_projects\splitwise\Splitwise-Clone\app\src\main\java\com\exaple\splitwise_clone\vinod\recyclerviews" />
       <recent name="C:\Users\Administrator\Desktop\SplitwiseApp\Splitwise-Clone\app\src\main\res\drawable" />
+    </key>
+    <key name="android.template.-649395479">
+      <recent name="com.exaple.splitwise_clone.sanjoy" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -313,10 +324,14 @@
     <state x="474" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1615292880697" />
     <state x="474" y="83" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1615541894034" />
     <state x="533" y="89" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1615444099184" />
-    <state x="415" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615362768093">
+    <state x="415" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615570510931">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="415" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1615362768093" />
+    <state x="415" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1615570510931" />
+    <state x="369" y="142" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1615570427919">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="369" y="142" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1615570427919" />
     <state x="263" y="124" key="AndroidCreateResourceFileDialog" timestamp="1615541700715">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -334,24 +349,28 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1615399663206" />
-    <state width="1323" height="183" key="GridCell.Tab.0.bottom" timestamp="1615553077711">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1306" height="159" key="GridCell.Tab.0.bottom" timestamp="1615572184171">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1306" height="159" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615572184171" />
     <state width="1323" height="183" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1615553077711" />
     <state width="1491" height="113" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615384194444" />
-    <state width="1323" height="183" key="GridCell.Tab.0.center" timestamp="1615553077711">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1306" height="159" key="GridCell.Tab.0.center" timestamp="1615572184170">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1306" height="159" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1615572184170" />
     <state width="1323" height="183" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1615553077711" />
     <state width="1491" height="113" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1615384194444" />
-    <state width="1323" height="183" key="GridCell.Tab.0.left" timestamp="1615553077710">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1306" height="159" key="GridCell.Tab.0.left" timestamp="1615572184170">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1306" height="159" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1615572184170" />
     <state width="1323" height="183" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1615553077710" />
     <state width="1491" height="113" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1615384194443" />
-    <state width="1323" height="183" key="GridCell.Tab.0.right" timestamp="1615553077711">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1306" height="159" key="GridCell.Tab.0.right" timestamp="1615572184170">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1306" height="159" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1615572184170" />
     <state width="1323" height="183" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1615553077711" />
     <state width="1491" height="113" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1615384194444" />
     <state x="184" y="28" key="SettingsEditor" timestamp="1615472765567">
@@ -366,9 +385,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="417" y="76" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.728@0.0.1366.728" timestamp="1615279820803" />
-    <state x="339" y="174" key="run.anything.popup" timestamp="1615547145758">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1615560260039">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1615560260039" />
     <state x="339" y="174" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1615547145758" />
     <state x="339" y="41" width="672" height="676" key="search.everywhere.popup" timestamp="1615499581531">
       <screen x="0" y="0" width="1366" height="768" />

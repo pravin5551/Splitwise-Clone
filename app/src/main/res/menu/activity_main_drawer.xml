@@ -18,9 +18,15 @@
             android:title="@string/scan_code" />
 
         <item
-            android:id="@+id/nav_Contact"
+            android:id="@+id/nav_Rateme"
+            android:icon="@drawable/ic_baseline_rate_review_24"
+            android:title="Rate Splitwise" />
+
+        <item
+            android:id="@+id/nav_LogOut"
             android:icon="@drawable/ic_baseline_login_24"
             android:title="@string/log_out" />
+
 
     </group>
 </menu>
