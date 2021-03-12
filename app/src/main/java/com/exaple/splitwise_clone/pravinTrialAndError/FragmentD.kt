@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.exaple.splitwise_clone.R
-import com.exaple.splitwise_clone.menubartrail.MenuMainActivity
+import com.exaple.splitwise_clone.harsh.Welcome_Screen_1_Activity
 import kotlinx.android.synthetic.main.fragment_d.*
 
 
@@ -41,7 +41,7 @@ class FragmentD : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         ivClickAnywhere.setOnClickListener {
-            val intent = Intent(activity, MenuMainActivity::class.java)
+            val intent = Intent(activity, Welcome_Screen_1_Activity::class.java)
             startActivity(intent)
         }
 

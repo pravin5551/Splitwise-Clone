@@ -29,6 +29,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18dec4ef-31b5-4c59-85a6-563208b0ab0e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/harsh/Welcome_Screen_1_Activity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
@@ -37,19 +38,21 @@
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/harsh/FirstScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/harsh/FirstScreen.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/harsh/Sign_up_Screen_Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/harsh/Sign_up_Screen_Activity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/menubartrail/ui/scancode/ScanCodeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/menubartrail/ui/scancode/ScanCodeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/pravinTrialAndError/FragmentB.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/pravinTrialAndError/FragmentB.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up__screen_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up__screen_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_scancode.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_scancode.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/harsh/SplitWiseScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/harsh/SplitWiseScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/harsh/Welcome_Screen_Activity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/pravinTrialAndError/FragmentD.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/pravinTrialAndError/FragmentD.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/pravinTrialAndError/FragmentMainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/exaple/splitwise_clone/pravinTrialAndError/FragmentMainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_first_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_first_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome__screen_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome__screen_1_.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[ZY322BLNZD]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -196,6 +199,14 @@
       <option name="presentableId" value="Default" />
       <updated>1615277390401</updated>
     </task>
+    <task id="LOCAL-00001" summary="login_2">
+      <created>1615526184250</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615526184250</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +221,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="login_2" />
+    <option name="LAST_COMMIT_MESSAGE" value="login_2" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="606" y="0" width="647" height="824" key="#app" timestamp="1615401027325">
       <screen x="0" y="0" width="1536" height="824" />
@@ -220,10 +235,10 @@
     </state>
     <state x="474" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1615292880697" />
     <state x="533" y="89" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1615444099184" />
-    <state x="415" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615362768093">
+    <state x="415" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615547510188">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="415" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1615362768093" />
+    <state x="415" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1615547510188" />
     <state x="526" y="203" width="486" height="417" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1615406039926">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -236,6 +251,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="614" y="202" key="AndroidCreateXmlResourceDialog/0.0.1536.824@0.0.1536.824" timestamp="1615447473615" />
+    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1615526177976">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1615526177976" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1615443573763">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -260,6 +279,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1615518696465" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1615526289774">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1615526289774" />
     <state x="501" y="141" key="chooseDestDirectoryDialog" timestamp="1615362771442">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

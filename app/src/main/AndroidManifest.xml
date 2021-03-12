@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splitwise_Clone">
-        <activity android:name=".harsh.RateMeActivity"></activity>
+        <activity android:name=".harsh.Welcome_Screen_1_Activity"></activity>
+        <activity android:name=".harsh.RateMeActivity" />
         <activity
             android:name=".menubartrail.MenuMainActivity"
             android:label="@string/title_activity_main"

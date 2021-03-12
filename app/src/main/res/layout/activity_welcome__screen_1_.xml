@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".harsh.Welcome_Screen_Activity">
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".harsh.Welcome_Screen_1_Activity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -74,3 +74,4 @@
 
 
 </LinearLayout>
+

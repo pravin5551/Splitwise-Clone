@@ -15,7 +15,7 @@ import com.exaple.splitwise_clone.pravinTrialAndError.FragmentMainActivity
 import kotlinx.android.synthetic.main.activity_sign_up__screen_.*
 
 class Sign_up_Screen_Activity : AppCompatActivity() {
-    private lateinit var ivImageTakerSplitWise: ImageView
+        private lateinit var ivImageTakerSplitWise: ImageView
     private lateinit var ivCameraSplitWise: ImageView
     private val cameraRequestSplitWise = 1222
 

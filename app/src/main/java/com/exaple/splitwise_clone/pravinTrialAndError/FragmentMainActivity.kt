@@ -35,7 +35,7 @@ class FragmentMainActivity : AppCompatActivity(), TabLayout.OnTabSelectedListene
          */TabLayoutMediator(
             tabLayout, mViewPager!!
         )
-        { tab, position -> Log.d("pravin", "onConfigureTab called") }.attach()
+        { tab, position -> Log.d("Splitwise", "onConfigureTab called") }.attach()
 
     }
 
