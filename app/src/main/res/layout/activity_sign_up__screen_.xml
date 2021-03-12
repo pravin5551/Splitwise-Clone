@@ -35,14 +35,14 @@
         app:layout_constraintTop_toBottomOf="@+id/etFullName">
 
         <ImageView
-            android:id="@+id/ivImageTaker"
+            android:id="@+id/ivImageTakerSplitWise"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="@dimen/dp_10"
-            android:src="@drawable/ic_take_photo" />
+            android:src="@drawable/ic_person_green_head_circle" />
 
         <ImageView
-            android:id="@+id/ivCamera"
+            android:id="@+id/ivCameraSplitWise"
             android:layout_width="wrap_content"
             android:layout_gravity="bottom"
             android:layout_height="wrap_content"
