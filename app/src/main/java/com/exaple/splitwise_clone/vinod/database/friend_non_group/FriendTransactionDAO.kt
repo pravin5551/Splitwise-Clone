@@ -12,7 +12,7 @@ interface FriendTransactionDAO {
     fun getFriendTransactionList(): LiveData<List<FriendTransactionEntity>>
 
     @Update
-    fun updateFriendTransaction(friendTransactionEntity: FriendTransactionEntity)
+    suspend fun updateFriendTransaction(friendTransactionEntity: FriendTransactionEntity)
 
     @Delete
     fun deleteFriendTransaction(friendTransactionEntity: FriendTransactionEntity)

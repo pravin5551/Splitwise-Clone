@@ -16,15 +16,13 @@ class FriendTransactionRepository(val DAO: FriendTransactionDAO) {
     }
 
     fun getFriendTransactionsList(): LiveData<List<FriendTransactionEntity>> {
-        lateinit var x: LiveData<List<FriendTransactionEntity>>
-        CoroutineScope(Dispatchers.IO).launch {
-            x = DAO.getFriendTransactionList()
-        }
-        return x
+        return DAO.getFriendTransactionList()
     }
 
     fun updateFriendTransaction(entity: FriendTransactionEntity) {
+       CoroutineScope(Dispatchers.IO).launch {
         DAO.updateFriendTransaction(entity)
+       }
     }
 
     fun deleteFriendTransaction(entity: FriendTransactionEntity) {

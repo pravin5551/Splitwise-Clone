@@ -20,7 +20,9 @@ class UserRepository(val DAO: UserDAO) {
     }
 
     fun updateUser(entity: UserEntity) {
-        DAO.updateUser(entity)
+        CoroutineScope(Dispatchers.IO).launch {
+            DAO.updateUser(entity)
+        }
     }
 
     fun deleteUser(entity: UserEntity) {

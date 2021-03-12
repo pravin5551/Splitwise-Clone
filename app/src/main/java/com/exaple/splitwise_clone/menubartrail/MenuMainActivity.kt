@@ -36,12 +36,11 @@ class MenuMainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         appBar.elevation = 0.0f
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, AddExpenseActivity::class.java)
             startActivity(intent)
         }
 

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/clConstrintLayout"
     android:layout_height="match_parent"
     tools:context=".menubartrail.ui.home.FriendsFragment">
 
@@ -57,20 +58,31 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listOfUserContacts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/clLayout" />
+
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dp_20"
         android:elevation="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/clLayout">
+        app:layout_constraintTop_toBottomOf="@id/listOfUserContacts">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cvAddNewFriend"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:clickable="true"
-            android:focusable="true"
-            android:layout_height="wrap_content">
+            android:focusable="true">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -79,12 +91,12 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:textColor="@color/black"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:drawableStart="@drawable/plus_black"
+                    android:gravity="center"
                     android:padding="@dimen/dp_6"
-                    android:text="@string/add_more_friends" />
+                    android:text="@string/add_more_friends"
+                    android:textColor="@color/black" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>

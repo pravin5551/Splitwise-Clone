@@ -12,7 +12,7 @@ interface UserDAO {
     fun getUserList(): LiveData<List<UserEntity>>
 
     @Update
-    fun updateUser(userEntity: UserEntity)
+    suspend fun updateUser(userEntity: UserEntity)
 
     @Delete
     fun deleteUser(userEntity: UserEntity)

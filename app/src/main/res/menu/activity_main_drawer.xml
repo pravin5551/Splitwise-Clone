@@ -19,8 +19,8 @@
 
         <item
             android:id="@+id/nav_Contact"
-            android:icon="@drawable/ic_baseline_email_24"
-            android:title="@string/contact_us" />
+            android:icon="@drawable/ic_baseline_login_24"
+            android:title="@string/log_out" />
 
     </group>
 </menu>

@@ -40,7 +40,7 @@ class Sign_up_Screen_Activity : AppCompatActivity() {
                     etSignUpFullName.text.toString(),
                     etSignUpPhone.text.toString(),
                     etSignUpEmail.text.toString(), etSignUpPassword.text.toString(),
-                    "", "", "", 0
+                    "", "0", "0", 0
                 )
 
                 userViewModel.addUser(userEntity)

@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".harsh.SplitWiseScreen">
 
-
     <ImageView
         android:id="@+id/splitWiseIcon"
         android:layout_width="wrap_content"
@@ -24,7 +23,9 @@
         android:layout_margin="@dimen/dp_15"
         android:layout_marginBottom="60dp"
         android:backgroundTint="@color/green_1"
+        android:padding="@dimen/dp_20"
         android:text="@string/login_in"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/btnSignUp"
         tools:layout_editor_absoluteX="15dp" />
 
@@ -34,17 +35,20 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dp_15"
         android:backgroundTint="@color/green_2"
+        android:padding="@dimen/dp_20"
         android:text="@string/sign_up"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/btnGoogle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 
     <ImageButton
         android:id="@+id/btnGoogle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
         android:src="@drawable/ic_google_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
