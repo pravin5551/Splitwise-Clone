@@ -38,7 +38,6 @@ class MenuMainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         setContentView(R.layout.activity_main2)
         setSupportActionBar(toolbar)
 
-        val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
             val intent = Intent(this, AddExpenseActivity::class.java)
             startActivity(intent)

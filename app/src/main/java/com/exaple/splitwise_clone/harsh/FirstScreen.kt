@@ -26,7 +26,7 @@ class FirstScreen : AppCompatActivity() {
                 val intent = Intent(this@FirstScreen, SplitWiseScreen::class.java)
                 startActivity(intent)
             } else {
-                val intent = Intent(this@FirstScreen, MenuMainActivity::class.java)
+                val intent = Intent(this@FirstScreen, Welcome_Screen_1_Activity::class.java)
                 startActivity(intent)
             }
             finish()

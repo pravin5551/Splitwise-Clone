@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".harsh.Welcome_Screen_1_Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_25"
+        android:padding="@dimen/dp_5"
+        android:text="Welcome to"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_30"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:padding="@dimen/dp_5"
+        android:text="Splitwise,"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_30"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:padding="@dimen/dp_5"
+        android:text="Harsh!"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_30"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/person_green_head_circle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="What Do You Like to do?"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/btnAddYourApartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_add_your_apartment" />
+
+    <ImageView
+        android:id="@+id/btnAddYourGroupTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:src="@drawable/ic_add_a_group_trip" />
+
+    <ImageView
+        android:id="@+id/btnSkipForNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:src="@drawable/ic_skip_setup_for_now" />
+</LinearLayout>

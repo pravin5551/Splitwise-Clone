@@ -6,11 +6,104 @@
     android:layout_height="match_parent"
     tools:context=".harsh.Sign_up_Screen_Activity">
 
+    <!--    <ImageView-->
+    <!--        android:id="@+id/ivLogo"-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="@dimen/dp_5"-->
+    <!--        android:src="@drawable/logomark_2"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/etSignUpFullName"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="@dimen/dp_15"-->
+    <!--        android:hint="@string/full_name"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        android:textColorHint="@color/green_2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/ivLogo" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/etSignUpEmail"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="@dimen/dp_15"-->
+    <!--        android:hint="Email address"-->
+    <!--        android:inputType="textEmailAddress"-->
+    <!--        android:textColorHint="@color/green_2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/etSignUpFullName" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/etSignUpPassword"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="@dimen/dp_15"-->
+    <!--        android:hint="Password"-->
+    <!--        android:inputType="textVisiblePassword"-->
+    <!--        android:textColorHint="@color/green_2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/etSignUpEmail" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/etSignUpPhone"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="@dimen/dp_15"-->
+    <!--        android:hint="Phone (Optional)"-->
+    <!--        android:inputType="phone"-->
+    <!--        android:textColorHint="@color/green_2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/etSignUpPassword" />-->
+
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/buttonLayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="@dimen/dp_25"-->
+    <!--        android:gravity="center_horizontal"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/etSignUpPhone">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:gravity="center_horizontal"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/btnBackSign"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:backgroundTint="@color/grey"-->
+    <!--                android:text="@string/back"-->
+    <!--                android:textColor="@color/black" />-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/btnDoneSign"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="40dp"-->
+    <!--                android:backgroundTint="@color/green_2"-->
+    <!--                android:text="@string/done"-->
+    <!--                android:textColor="@color/white" />-->
+    <!--        </LinearLayout>-->
+    <!--    </LinearLayout>-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="@dimen/dp_25"-->
+    <!--        android:text="@string/by_signing_up"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/buttonLayout" />-->
+
+
     <ImageView
         android:id="@+id/ivLogo"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dp_5"
+        android:layout_height="0dp"
         android:src="@drawable/logomark_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,39 +115,85 @@
         android:layout_margin="@dimen/dp_15"
         android:hint="@string/full_name"
         android:inputType="textPersonName"
+        android:textColor="@color/black"
         android:textColorHint="@color/green_2"
         app:layout_constraintTop_toBottomOf="@id/ivLogo" />
 
-    <EditText
-        android:id="@+id/etSignUpEmail"
+    <LinearLayout
+        android:id="@+id/middleLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dp_15"
-        android:hint="Email address"
-        android:inputType="textEmailAddress"
-        android:textColorHint="@color/green_2"
-        app:layout_constraintTop_toBottomOf="@id/etSignUpFullName" />
+        android:layout_marginTop="@dimen/dp_25"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpFullName">
 
-    <EditText
-        android:id="@+id/etSignUpPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dp_15"
-        android:hint="Password"
-        android:inputType="textVisiblePassword"
-        android:textColorHint="@color/green_2"
-        app:layout_constraintTop_toBottomOf="@id/etSignUpEmail" />
+        <ImageView
+            android:id="@+id/ivImageTakerSplitWise"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/dp_10"
+            android:background="#c4c4c4"
+            android:src="@drawable/person_green_head_circle" />
+
+        <ImageView
+            android:id="@+id/ivCameraSplitWise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_baseline_camera_alt_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etSignUpEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivLogo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:hint="@string/your_email_address"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/green_2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etSignUpPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEmailSignUp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:hint="@string/your_password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/green_2" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
 
     <EditText
         android:id="@+id/etSignUpPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dp_15"
-        android:hint="Phone (Optional)"
+        android:hint="Phone (optional)"
         android:inputType="phone"
+        android:textColor="@color/black"
         android:textColorHint="@color/green_2"
-        app:layout_constraintTop_toBottomOf="@id/etSignUpPassword" />
-
+        app:layout_constraintTop_toBottomOf="@id/middleLayout" />
 
     <LinearLayout
         android:id="@+id/buttonLayout"
@@ -84,7 +223,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:backgroundTint="@color/green_2"
+                android:backgroundTint="@color/forest_green"
                 android:text="@string/done"
                 android:textColor="@color/white" />
         </LinearLayout>
