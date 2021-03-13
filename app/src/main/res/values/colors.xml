@@ -12,7 +12,7 @@
     <color name="mint_leaf">#00b894</color>
     <color name="pumpkin">#d35400</color>
     <color name="harley_davidson_orrange">#c23616</color>
-<<<<<<< HEAD
+
     <color name="grey">#e4e4e4</color>
     <color name="tomatto_red">#eb2f06</color>
     <color name="shadow_steel">#4b4b4b</color>
@@ -20,7 +20,6 @@
 
     <color name="green_1">#373b3f</color>
     <color name="green_2">#1cc29f</color>
-    <color name="grey">#EEEEEE</color>
     <color name="forest_green">#218721</color>
 
 
@@ -28,5 +27,5 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
->>>>>>> 50455efb25668612359e5b32e6213f858409b196
+
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.exaple.splitwise_clone" >
+    package="com.exaple.splitwise_clone">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -13,38 +13,24 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-<<<<<<< HEAD
-        android:theme="@style/Theme.Splitwise_Clone" >
-        <activity android:name=".sanjoy.GroupActivity" >
-        </activity>
+        android:theme="@style/Theme.Splitwise_Clone">
+        <activity android:name=".sanjoy.NonGroupExpensesActivity"></activity>
+        <activity android:name=".sanjoy.SettleUpActivity" />
+        <activity android:name=".sanjoy.GroupActivity" />
         <activity android:name=".sanjoy.HomeActivity" />
         <activity android:name=".sanjoy.SettingActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".sanjoy.AddExpenseActivity" >
-=======
-        android:theme="@style/Theme.Splitwise_Clone">
-
-
+        <activity android:name=".sanjoy.AddExpenseActivity" />
         <activity
             android:name=".pravinTrialAndError.FragmentMainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.Splitwise_Clone.NoActionBar" />
         <activity android:name=".menubartrail.pravinmainactivity.MainActivity" />
-        <activity android:name=".sanjoy.AddExpenseActivity" />
-
-        <activity android:name=".sanjoy.HomeActivity" />
-        <activity android:name=".sanjoy.SettingActivity" />
-
         <activity android:name=".vinod.views.MainActivity" />
         <activity android:name=".menubartrail.MenuMainActivity" />
-
-
         <activity android:name=".harsh.Sign_up_Screen_Activity" />
         <activity android:name=".harsh.Login_Screen_Activity" />
         <activity android:name=".harsh.SplitWiseScreen" />
         <activity android:name=".harsh.FirstScreen">
-
->>>>>>> 50455efb25668612359e5b32e6213f858409b196
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -52,6 +38,5 @@
             </intent-filter>
         </activity>
     </application>
-
 
 </manifest>

@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_20"
-            android:src="@drawable/circle"
+            android:src="@drawable/plus_circle"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -76,7 +76,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
-                android:drawableStart="@drawable/plus"
                 android:padding="@dimen/dp_6"
                 android:text="@string/start_a_new_group" />
 
