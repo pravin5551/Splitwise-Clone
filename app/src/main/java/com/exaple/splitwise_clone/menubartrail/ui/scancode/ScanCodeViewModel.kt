@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class ScanCodeViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is Scan Code Fragment"
+        value = ""
     }
     val text: LiveData<String> = _text
 }
