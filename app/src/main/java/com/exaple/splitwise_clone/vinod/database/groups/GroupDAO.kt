@@ -13,7 +13,7 @@ interface GroupDAO {
     fun getGroupList(): LiveData<List<GroupEntity>>
 
     @Update
-    fun updateGroup(groupEntity: GroupEntity)
+    suspend fun updateGroup(groupEntity: GroupEntity)
 
     @Delete
     fun deleteGroup(groupEntity: GroupEntity)

@@ -32,7 +32,6 @@ class SettleUpActivity : AppCompatActivity() {
     private lateinit var friendTransactionAdapter: FriendTransactionAdapter
     val temp = mutableListOf<FriendTransactionEntity>()
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settle_up)
@@ -56,13 +55,14 @@ class SettleUpActivity : AppCompatActivity() {
 
         settleupAll.setOnClickListener {
             getTransactions()
-            if (temp.size >= 1){
+            if (temp.size >= 1) {
                 for (i in temp) {
                     i.amount = 0
                     friendTransactionViewModel.updateFriendTransaction(i)
                 }
                 userEntity.owe = (userEntity.owe.toInt() - amount).toString()
                 userViewModel.updateUser(userEntity)
+                finish()
             }
         }
     }

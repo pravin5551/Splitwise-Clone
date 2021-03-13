@@ -62,12 +62,19 @@ class AddExpenseActivity : AppCompatActivity(), ContactCommunicator {
                 Manifest.permission.WRITE_CONTACTS
             ), REQ_CODE
         )
+        ibClose.setOnClickListener {
+            lvContacts.visibility = View.GONE
+            ibClose.visibility = View.GONE
+            containerLayout.visibility = View.VISIBLE
+        }
         etNameEmailPhone.onFocusChangeListener = View.OnFocusChangeListener { v, hasFocus ->
             if (hasFocus) {
                 lvContacts.visibility = View.VISIBLE
+                ibClose.visibility = View.VISIBLE
                 containerLayout.visibility = View.GONE
             } else {
                 lvContacts.visibility = View.GONE
+                ibClose.visibility = View.GONE
                 containerLayout.visibility = View.VISIBLE
             }
         }
@@ -133,8 +140,12 @@ class AddExpenseActivity : AppCompatActivity(), ContactCommunicator {
                     usersList.forEach {
                         if (it.id == preferenceHelper.readIntFromPreference(SplitwiseApplication.PREF_USER_ID)) {
                             x = it
-                            x.owe = (x.owe.toInt() + eachShare).toString()
-                            Log.d("TAG", "onCreate: " + eachShare)
+                            x.owe = (x.owe.toInt() + (tvAmount.text.toString()
+                                .toInt() - eachShare)).toString()
+                            Log.d(
+                                "TAG",
+                                "onCreate: " + (tvAmount.text.toString().toInt() - eachShare)
+                            )
                             userViewModel.updateUser(x)
                             Toast.makeText(this, "Added Successfully", Toast.LENGTH_SHORT)
                                 .show()

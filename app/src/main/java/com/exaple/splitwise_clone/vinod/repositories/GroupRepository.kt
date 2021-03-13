@@ -18,15 +18,13 @@ class GroupRepository(val DAO: GroupDAO) {
     }
 
     fun getGroupList(): LiveData<List<GroupEntity>> {
-        lateinit var x: LiveData<List<GroupEntity>>
-        CoroutineScope(Dispatchers.IO).launch {
-            x = DAO.getGroupList()
-        }
-        return x
+        return DAO.getGroupList()
     }
 
     fun updateGroup(entity: GroupEntity) {
-        DAO.updateGroup(entity)
+        CoroutineScope(Dispatchers.IO).launch {
+            DAO.updateGroup(entity)
+        }
     }
 
     fun deleteGroup(entity: GroupEntity) {

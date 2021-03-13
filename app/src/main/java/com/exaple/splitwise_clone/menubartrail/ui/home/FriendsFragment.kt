@@ -16,6 +16,7 @@ import com.exaple.splitwise_clone.vinod.recyclerviews.contactlist.ContactListAda
 import com.exaple.splitwise_clone.vinod.viewmodels.*
 import com.exaple.splitwise_clone.vinod.views.SplitwiseApplication
 import kotlinx.android.synthetic.main.fragment_friends.*
+import kotlin.math.abs
 
 class FriendsFragment : Fragment() {
     private lateinit var preferenceHelper: PreferenceHelper
@@ -34,11 +35,15 @@ class FriendsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        preferenceHelper=PreferenceHelper(container?.context!!)
+        preferenceHelper = PreferenceHelper(container?.context!!)
         createDatabase()
         return inflater!!.inflate(R.layout.fragment_friends, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        getTransactions()
+    }
 
     private fun createDatabase() {
 
@@ -78,11 +83,11 @@ class FriendsFragment : Fragment() {
                 tvSettledUp.text = "you are all settled up"
                 tvSettledUp.setTextColor(Color.parseColor("#000000"))
             } else if (x > 0) {
-                tvSettledUp.text = "You owe \u20B9 $x "
-                tvSettledUp.setTextColor(Color.parseColor("#FF5216"))
-            } else {
                 tvSettledUp.text = "You owes \u20B9 $x "
-                tvSettledUp.setTextColor(Color.parseColor("#00ff00"))
+                tvSettledUp.setTextColor(Color.parseColor("#1cc29f"))
+            } else {
+                tvSettledUp.text = "You owe \u20B9 ${abs(x)} "
+                tvSettledUp.setTextColor(Color.parseColor("#FF5216"))
             }
         })
         var hashMap = HashMap<String, Int>()
@@ -117,6 +122,5 @@ class FriendsFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         getTransactions()
-
     }
 }

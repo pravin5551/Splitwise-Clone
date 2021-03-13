@@ -18,11 +18,7 @@ class GroupTransactionRepository(val DAO: TransactionDAO) {
     }
 
     fun getTransactionsList(): LiveData<List<TransactionEntity>> {
-        lateinit var x: LiveData<List<TransactionEntity>>
-        CoroutineScope(Dispatchers.IO).launch {
-            x = DAO.getTransactionList()
-        }
-        return x
+        return DAO.getTransactionList()
     }
 
     fun updateTransaction(entity: TransactionEntity) {

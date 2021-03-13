@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sanjoy.AddExpenseActivity">
+    tools:context=".sanjoy.AddTransactionActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clLayout"
@@ -51,12 +51,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvContactAddTemp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/clLayout" />
-
     <TextView
         android:id="@+id/tvWithYou"
         android:layout_width="wrap_content"
@@ -64,19 +58,19 @@
         android:layout_margin="10dp"
         android:text="@string/with_you_and"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@id/etNameEmailPhone"
-        app:layout_constraintEnd_toStartOf="@id/etNameEmailPhone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/etNameEmailPhone" />
+        app:layout_constraintTop_toBottomOf="@id/clLayout" />
 
-    <EditText
+    <TextView
         android:id="@+id/etNameEmailPhone"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/enter_name_email_phone"
+        android:padding="10dp"
         android:textSize="@dimen/sp_15"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tvWithYou"
-        app:layout_constraintTop_toBottomOf="@id/rvContactAddTemp" />
+        app:layout_constraintTop_toBottomOf="@id/clLayout" />
 
     <ImageButton
         android:id="@+id/ibClose"
@@ -88,7 +82,7 @@
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@id/lvContacts"
         app:layout_constraintStart_toEndOf="@+id/etNameEmailPhone"
-        app:layout_constraintTop_toBottomOf="@id/rvContactAddTemp" />
+        app:layout_constraintTop_toBottomOf="@id/clLayout" />
 
     <ListView
         android:id="@+id/lvContacts"
@@ -281,7 +275,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingEnd="@dimen/dp_30"
-            android:text="@string/no" />
+            android:text="yes" />
 
     </LinearLayout>
 

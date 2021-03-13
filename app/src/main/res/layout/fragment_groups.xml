@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".menubartrail.ui.home.GroupsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,7 +30,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_20"
-            android:src="@drawable/circle"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -41,30 +40,38 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dp_30"
             android:text="@string/total_balance"
-            app:layout_constraintTop_toTopOf="@id/ivProfile"
             app:layout_constraintBottom_toTopOf="@id/tvSettledUp"
-            app:layout_constraintStart_toEndOf="@id/ivProfile" />
+            app:layout_constraintStart_toEndOf="@id/ivProfile"
+            app:layout_constraintTop_toTopOf="@id/ivProfile" />
 
         <TextView
             android:id="@+id/tvSettledUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dp_30"
-            app:layout_constraintBottom_toBottomOf="@id/ivProfile"
             android:text="@string/you_are_all_settled_up"
+            app:layout_constraintBottom_toBottomOf="@id/ivProfile"
             app:layout_constraintStart_toEndOf="@id/ivProfile"
             app:layout_constraintTop_toBottomOf="@id/tvBalance" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listOfGroups"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/cvvvv"
+        app:layout_constraintTop_toBottomOf="@+id/clLayout" />
+
     <androidx.cardview.widget.CardView
+        android:id="@+id/cvvvv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dp_20"
         android:elevation="@dimen/dp_20"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/clLayout">
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -74,12 +81,12 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:textColor="@color/black"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:drawableStart="@drawable/plus_black"
+                android:gravity="center"
                 android:padding="@dimen/dp_6"
-                android:text="@string/start_a_new_group" />
+                android:text="@string/start_a_new_group"
+                android:textColor="@color/black" />
 
         </LinearLayout>
 

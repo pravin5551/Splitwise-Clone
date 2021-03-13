@@ -15,7 +15,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splitwise_Clone">
-        <activity android:name=".sanjoy.SettleUpActivity"></activity>
+        <activity android:name=".sanjoy.AddUsersActivity"></activity>
+        <activity android:name=".sanjoy.AddTransactionActivity" />
+        <activity android:name=".sanjoy.GroupTransactionActivity" />
+        <activity android:name=".sanjoy.GroupActivity" />
+        <activity android:name=".sanjoy.SettleUpActivity" />
         <activity
             android:name=".pravinTrialAndError.FragmentMainActivity"
             android:label="@string/title_activity_main"

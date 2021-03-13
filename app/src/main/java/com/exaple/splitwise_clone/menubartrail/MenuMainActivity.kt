@@ -19,25 +19,25 @@ import com.exaple.splitwise_clone.R
 import com.exaple.splitwise_clone.menubartrail.ui.home.ViewPagerSampleAdapter
 import com.exaple.splitwise_clone.sanjoy.AddExpenseActivity
 import com.exaple.splitwise_clone.sanjoy.HomeActivity
+import com.exaple.splitwise_clone.vinod.database.sharedpreferences.PreferenceHelper
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.app_bar_main.*
-
+import kotlinx.android.synthetic.main.nav_header_main.*
 
 class MenuMainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
-
 
     private lateinit var drawerLayout: DrawerLayout
 
     private lateinit var appBarConfiguration: AppBarConfiguration
-
+    val preferenceHelper = PreferenceHelper(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
         setSupportActionBar(toolbar)
-        appBar.elevation = 0.0f
+
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
             val intent = Intent(this, AddExpenseActivity::class.java)
@@ -55,12 +55,10 @@ class MenuMainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
             ), drawerLayout
         )
 
-
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
     }
-
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -71,6 +69,8 @@ class MenuMainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
+        tvUserName.text = "Hey, " + preferenceHelper.readStringFromPreference("USER_NAME") + "!"
+        textView.text = preferenceHelper.readStringFromPreference("USER_EMAIL").toString()
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 

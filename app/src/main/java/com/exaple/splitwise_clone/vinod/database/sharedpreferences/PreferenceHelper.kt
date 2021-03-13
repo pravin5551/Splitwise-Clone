@@ -35,6 +35,18 @@ class PreferenceHelper(val context: Context) {
         return sharedPreferences!!.getBoolean(key, true)
     }
 
+    fun writeStringToPreference(key: String?, value: String) {
+        sharedPreference()
+        val editor = sharedPreferences!!.edit()
+        editor.putString(key, value)
+        editor.apply()
+    }
+
+    fun readStringFromPreference(key: String?): String {
+        sharedPreference()
+        return sharedPreferences!!.getString(key, "").toString()
+    }
+
     fun readIntFromPreference(key: String?): Int {
         sharedPreference()
         return sharedPreferences!!.getInt(key, 0)

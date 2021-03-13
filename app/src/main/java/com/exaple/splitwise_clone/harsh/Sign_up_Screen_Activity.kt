@@ -1,19 +1,14 @@
 package com.exaple.splitwise_clone.harsh
 
-import android.app.Application
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
 import com.exaple.splitwise_clone.R
-import com.exaple.splitwise_clone.pravinTrialAndError.FragmentMainActivity
-import com.exaple.splitwise_clone.vinod.database.sharedpreferences.PreferenceHelper
 import com.exaple.splitwise_clone.vinod.database.users.UserEntity
 import com.exaple.splitwise_clone.vinod.viewmodels.*
 import com.exaple.splitwise_clone.vinod.views.SplitwiseApplication
-import kotlinx.android.synthetic.main.activity_login__screen_.*
 import kotlinx.android.synthetic.main.activity_sign_up__screen_.*
 
 class Sign_up_Screen_Activity : AppCompatActivity() {

@@ -51,12 +51,14 @@ class Login_Screen_Activity : AppCompatActivity() {
                             SplitwiseApplication.PREF_IS_USER_LOGIN,
                             true
                         )
+                        preferenceHelper.writeStringToPreference("USER_NAME", i.name)
+                        preferenceHelper.writeStringToPreference("USER_EMAIL", i.email)
                         startActivity(intent2)
                         this.finish()
                         break
-                    }
+                    } else Toast.makeText(this, "Email or Password is wrong", Toast.LENGTH_SHORT)
+                        .show()
                 }
-                Toast.makeText(this, "Email or Password is wrong", Toast.LENGTH_SHORT).show()
             })
         }
     }
