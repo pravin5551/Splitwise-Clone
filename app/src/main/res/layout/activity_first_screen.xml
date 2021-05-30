@@ -10,7 +10,6 @@
     <ImageView
         android:id="@+id/screen"
         android:layout_width="match_parent"
-        android:src="@drawable/ic_intro_screen"
         android:scaleType="fitXY"
         android:layout_height="match_parent"/>
 

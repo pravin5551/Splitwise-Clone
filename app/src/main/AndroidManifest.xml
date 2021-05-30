@@ -16,7 +16,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Splitwise_Clone">
         <activity android:name=".harsh.Welcome_Screen_1_Activity"></activity>
-        <activity android:name=".sanjoy.AddUsersActivity" />
         <activity android:name=".sanjoy.AddTransactionActivity" />
         <activity android:name=".sanjoy.GroupTransactionActivity" />
         <activity android:name=".sanjoy.GroupActivity" />

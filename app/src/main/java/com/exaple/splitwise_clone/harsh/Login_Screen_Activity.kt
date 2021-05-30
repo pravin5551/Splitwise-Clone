@@ -26,7 +26,8 @@ class Login_Screen_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login__screen_)
-        etEmail.editText?.setText(intent.getStringExtra("email").toString())
+        if (intent.getStringExtra("email").toString() != "null")
+            etEmail.editText?.setText(intent.getStringExtra("email").toString())
         createDatabase()
         btnBackLogin.setOnClickListener {
             val intent = Intent(this, SplitWiseScreen::class.java)
