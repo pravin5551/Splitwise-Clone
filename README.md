@@ -31,6 +31,6 @@
 </ul>
 
 <H2> It's a group project</h2>
-<h4>We are 4 on the team (Vinod Kumar C(me), Sanjoy Paul, Praveen Pawar, Harsh Kamaliya).</h4>
+<h4>We are 4 on the team (Vinod Kumar C, Pravin Pawar, Sanjoy Paul, Harsh Kamaliya).</h4>
 
 <H1>Thank you</h1>
