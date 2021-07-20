@@ -1,7 +1,7 @@
 <h1>SplitWise - Clone</h1>
 
 <hr />
-<h4>Splitwise clone app is a free tool for friends and roommates to track bills and other shared expenses, so that everyone gets paid back.</h4>
+<h4>Splitwise Clone helps you and your friends keep track of shared expenses. Splitwise is an app that easily splits bills with friends and family also keeps track of your shared expenses and IOUs in one place so that everyone can see who they owe.</h4>
 
 <H2>#Tech stacks used</h2>
 <ul>
