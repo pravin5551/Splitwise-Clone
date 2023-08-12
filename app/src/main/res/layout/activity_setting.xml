@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/clLayout"
     tools:context=".sanjoy.SettingActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clLayout"
+        android:id="@+id/clLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/mint_leaf"

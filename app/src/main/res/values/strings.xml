@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Splitwise_Clone</string>
 
+
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -91,7 +92,6 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome_to_splitwise_pravin">Welcome to Splitwise, Pravin!</string>
     <string name="splitwise_friends">Splitwise keeps track of balances between friends</string>
     <string name="introOfFrag">You can split expenses with group or individuals</string>
@@ -110,10 +110,7 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="scan_code">Scan Code</string>
     <string name="settings">Settings</string>
-    <string name="contact_us">Contact us</string>
 
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="split_wise">Splitwise</string>
     <string name="total_balance">TOTAL BALANCE</string>
@@ -137,5 +134,40 @@
     <string name="equally">EQUALLY</string>
     <string name="today">Today</string>
     <string name="no">No</string>
+    <string name="create_a_group">Create a group</string>
+    <string name="apartment">Apartment</string>
+    <string name="house">House</string>
+    <string name="trip">Trip</string>
+    <string name="other">Other</string>
+    <string name="group_name">Group name</string>
+    <string name="enter_a_group_name">Enter a group name</string>
+    <string name="advanced_setting">Advanced settings</string>
+    <string name="simplify_group_debts">Simplify group debts</string>
+    <string name="you_will_be_able">You will be able to add group</string>
+    <string name="members_after">members after you save this new</string>
+    <string name="group">group.</string>
+    <string name="splitwise_will_not_combine">Splitwise will not combine debts in this group,</string>
+    <string name="even_if_there_are">even if there are unnecessary extra payments.</string>
+    <string name="notes">Notes</string>
+    <string name="there_is_no_activity">There is no activity in your account yet.
+    Tryadding an expense!</string>
+
+    <string name="login_in">LOG IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="terms">Terms</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="contact_us">Contact us</string>
+    <string name="your_email_address">Your email address</string>
+    <string name="your_password">Your password address</string>
+    <string name="back">BACK</string>
+    <string name="done">DONE</string>
+    <string name="forgot_password">Forgot your password </string>
+    <string name="full_name">Full name </string>
+    <string name="by_signing_up">By signing up, you accept the Splitwise Terms of Service</string>
+    <string name="add_friends_on_spliwise">Add Friends on Spliwise</string>
+    <string name="groups">Groups</string>
+    <string name="activity">Activity</string>
+    <string name="friends">Friends</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

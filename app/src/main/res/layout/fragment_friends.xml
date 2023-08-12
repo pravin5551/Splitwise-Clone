@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sanjoy.FriendsFragment">
+    tools:context=".menubartrail.ui.home.FriendsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#e4e4e4"
+        android:background="@color/grey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_20"
-            android:src="@drawable/circle"
+            android:src="@drawable/plus_circle"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -69,14 +69,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#e4e4e4"
+            android:background="@color/grey"
             android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:textColor="@color/black"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/plus"
                 android:padding="@dimen/dp_6"
                 android:text="@string/add_more_friends" />
 
@@ -88,8 +87,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dp_20"
-        android:backgroundTint="@color/pumpkin"
-        android:src="@drawable/plus"
+        android:backgroundTint="@color/tomatto_red"
+        android:src="@drawable/plus_white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
